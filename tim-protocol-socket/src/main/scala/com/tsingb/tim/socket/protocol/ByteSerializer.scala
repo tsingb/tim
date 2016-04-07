@@ -26,11 +26,11 @@ object ByteSerializer {
       case 4 =>
         Some(Pong())
       case 5 =>
-        Some(Msg.fromJSON("users_msg", str))
+        Some(Msg.fromJSON("chat", str))
       case 6 =>
-        Some(Msg.fromJSON("group_msg", str))
+        Some(Msg.fromJSON("groupchat", str))
       case 7 =>
-        Some(Msg.fromJSON("room_msg", str))
+        Some(Msg.fromJSON("roomchat", str))
       case 8 =>
         Some(MsgAck.fromJSON(str))
       case 10 =>
